@@ -6,7 +6,7 @@ import java.util.List;
 import versao_inicial.model.Profissional;
 
 public class ProfissionalService {
-    private List<Profissional> profissionaisDB;
+    private final List<Profissional> profissionaisDB;
     private int contadorRequisicao = 0;
 
     public ProfissionalService(){
@@ -38,4 +38,5 @@ public class ProfissionalService {
         return true;
         
     }
+    
 }

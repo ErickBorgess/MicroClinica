@@ -1,15 +1,15 @@
 package versao_inicial.model;
 
 public class Paciente {
-    private int id = 0;
+    private String id;
     private String nome;
     
-    public Paciente(String nome) {
+    public Paciente(String id, String nome) {
         this.nome = nome;
-        this.id = id++;
+        this.id = id;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 

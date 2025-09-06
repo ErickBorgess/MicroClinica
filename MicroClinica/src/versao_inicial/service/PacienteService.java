@@ -5,24 +5,21 @@ import java.util.List;
 import versao_inicial.model.Paciente;
 
 public class PacienteService {
-    private List<Paciente> pacientes;
+    private final List<Paciente> pacientesDB;
 
     public PacienteService() {
-        this.pacientes = new ArrayList<>();
-    }
-
-    public PacienteService(Paciente paciente) {
-        this.pacientes = new ArrayList<>();
-        pacientes.add(paciente);
+        this.pacientesDB = new ArrayList<>();
+        pacientesDB.add(new Paciente("PAC01", "Ana Silva"));
+        pacientesDB.add(new Paciente("PAC02", "Bruno Costa"));
     }
     
-    public Paciente buscarPorId(int id) {
-       for(Paciente p : pacientes) {
-              if(p.getId() == id) {
+    public Paciente buscarPorId(String id) {
+       for(Paciente p : pacientesDB) {
+              if(p.getId().equals(id)) {
                 return p;
               }
        }
        return null;
     }
-}
 
+}

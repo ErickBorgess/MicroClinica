@@ -6,6 +6,7 @@ public class Profissional {
     private String especialidade;
     
     public Profissional(String id, String nome, String especialidade) {
+        this.id = id;
         this.nome = nome;
         this.especialidade = especialidade;
     }
@@ -21,4 +22,5 @@ public class Profissional {
     public String getEspecialidade() {
         return especialidade;
     }
+    
 }
