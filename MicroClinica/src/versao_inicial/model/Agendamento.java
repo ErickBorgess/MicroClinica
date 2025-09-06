@@ -1,12 +1,14 @@
 package versao_inicial.model;
 
+import java.time.LocalDateTime;
+
 public class Agendamento {
     private int id;
     private Paciente paciente;
     private Profissional profissional;
-    private String dataAgendamento;
+    private LocalDateTime dataAgendamento;
 
-    public Agendamento(Paciente paciente, Profissional profissional, String data) {
+    public Agendamento(Paciente paciente, Profissional profissional, LocalDateTime data) {
         this.paciente = paciente;
         this.profissional = profissional;
         this.dataAgendamento = data;
@@ -24,7 +26,7 @@ public class Agendamento {
         return profissional;
     }
 
-    public String getDataAgendamento() {
+    public LocalDateTime getDataAgendamento() {
         return dataAgendamento;
     }
 
