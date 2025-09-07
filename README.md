@@ -82,7 +82,7 @@ MicroClinica/
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/SEU_USUARIO/MicroClinica.git
+    git clone https://github.com/ErickBorgess/MicroClinica.git
     ```
 
 2. Abra o projeto em sua IDE Java (Eclipse, IntelliJ, VS Code com extensão Java).
