@@ -15,7 +15,7 @@ public class AgendamentoService {
         this.profissionalService = new ProfissionalService();
     }
 
-    public Agendamento   agendarConsulta(String idPaciente, String idProfissional, LocalDateTime dataAgendamento) {
+    public Agendamento agendarConsulta(String idPaciente, String idProfissional, LocalDateTime dataAgendamento) {
         var paciente = pacienteService.buscarPorId(idPaciente);
         if (paciente == null) {
             System.out.println("Paciente com ID " + idPaciente + " não encontrado!");
