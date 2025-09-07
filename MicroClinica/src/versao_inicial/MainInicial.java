@@ -3,7 +3,7 @@ package versao_inicial;
 import java.time.LocalDateTime;
 import versao_inicial.service.AgendamentoService;
 
-public class Main {
+public class MainInicial {
     public static void main(String[] args) {
         System.out.println("Micro Clínica - Versão Inicial");
         AgendamentoService agendamentoService = new AgendamentoService();
