@@ -18,7 +18,7 @@ public class ProfissionalService {
 
     public boolean verificarDisponibilidade(String idProfissional, LocalDateTime data) {
         contadorRequisicao++;
-        if (contadorRequisicao % 3 == 0) {
+        if (contadorRequisicao == 3 || contadorRequisicao == 4) {
             System.out.println("LOG: [ProfissionalService] - FALHA SIMULADA! O serviço está indisponível.");
             throw new RuntimeException("Erro de comunicação: Serviço de Profissionais indisponível!");
         }

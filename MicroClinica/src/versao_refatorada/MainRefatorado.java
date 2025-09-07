@@ -29,7 +29,7 @@ public class MainRefatorado {
         APIGateway gateway = new APIGateway(agendamentoService);
         
         // --- FASE DE EXECUÇÃO ---
-        for (int i = 1; i <= 8; i++) {
+        for (int i = 1; i <= 6; i++) {
             System.out.printf("%n>>> REQUISIÇÃO Nº %d via Gateway <<< %n", i);
             try {
                 String pacienteId = "PAC01";
